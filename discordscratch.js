@@ -1,4 +1,6 @@
 (function(ext) {
+    // Add the Discord.JS API
+    ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/discordjs/discord.js/webpack/discord.11.3.1.min.js');
     const bot = new Discord.Client()
     var messagecontent = "";
     var messagechannel = "";
@@ -53,8 +55,6 @@
         [' ', 'login bot %s', 'connect_d', ''],
         ]
     };
-    // Add the Discord.JS API
-    ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/discordjs/discord.js/webpack/discord.11.3.1.min.js');
     // Register the extension
     ScratchExtensions.register('Discord', descriptor, ext);
 })({});
