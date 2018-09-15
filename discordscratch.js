@@ -1,6 +1,5 @@
 (function(ext) {
-    // Add the Discord.JS API
-    ScratchExtensions.loadExternalJS('https://raw.githubusercontent.com/discordjs/discord.js/webpack/discord.11.3.1.min.js');
+    $('head').append('<script type="text/javascript" src="https://raw.githubusercontent.com/discordjs/discord.js/webpack/discord.11.3.1.min.js"></script>')
     const bot = new Discord.Client()
     var messagecontent = "";
     var messagechannel = "";
